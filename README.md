@@ -19,8 +19,8 @@ docker stats
 
 ## Teste de carga
 
-Foi utilizado Apache Bench:
-ab -n 1000 -c 50 http://localhost:8080/
+Foi utilizado:
+for i in {1..500}; do curl -s http://localhost:8080 > /dev/null & done
 
 ## Resultados
 
