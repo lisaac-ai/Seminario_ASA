@@ -1,0 +1,8 @@
+services:
+  app:
+    image: nginx:latest
+    container_name: teste_limite
+    ports:
+      - "8080:80"
+    mem_limit: 200m
+    cpus: 0.5
